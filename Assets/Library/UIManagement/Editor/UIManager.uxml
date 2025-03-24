@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Library/UIManagement/Buttons.uss?fileID=7433441132597879392&amp;guid=b28c384bc07b80446bd20e0fb896af9a&amp;type=3#Buttons" />
+    <ui:Label tabindex="-1" text="UI Management" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title" style="-unity-text-align: upper-center; color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 24px;" />
+    <ui:VisualElement name="GenerateList" style="flex-grow: 0;">
+        <ui:Label tabindex="-1" text="List" parse-escape-sequences="true" display-tooltip-when-elided="true" name="List" style="-unity-text-align: upper-center; color: rgb(255, 128, 128); -unity-font-style: bold; font-size: 15px; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+        <ui:Button text="GenerateUiElements(SO)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn_generateUiSO" style="background-color: rgb(55, 197, 100); color: rgb(0, 0, 0);" />
+        <ui:Button text="GenerateUiElements(GameObjectInCanvas)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn_generateUiGO" style="background-color: rgb(197, 159, 55); color: rgb(0, 0, 0);" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Enum" style="flex-grow: 0;">
+        <ui:Label tabindex="-1" text="Enum" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Enum" style="-unity-text-align: upper-center; color: rgb(255, 128, 128); -unity-font-style: bold; font-size: 15px; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+        <ui:Button text="GenerateEnum" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn_generateEnum" style="background-color: rgb(181, 199, 73); color: rgb(0, 0, 0);" />
+        <ui:Button text="ClearEnum" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn_clearEnum" style="background-color: rgb(73, 198, 199); color: rgb(0, 0, 0);" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Settings" style="flex-grow: 0;">
+        <ui:Label tabindex="-1" text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Settings" style="-unity-text-align: upper-center; color: rgb(255, 128, 128); -unity-font-style: bold; font-size: 15px; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+        <ui:TextField picking-mode="Ignore" label="UiElementField" name="SOField" binding-path="uiElementPath" />
+    </ui:VisualElement>
+</ui:UXML>
