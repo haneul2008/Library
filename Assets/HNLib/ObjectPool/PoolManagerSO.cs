@@ -56,13 +56,13 @@ namespace HNLib.ObjectPool
         private void AddPool(Transform parent, Type type, MonoBehaviour monoBehaviour)
         {
             PoolableAttribute attribute = Attribute.GetCustomAttribute(type, typeof(PoolableAttribute)) as PoolableAttribute;
-
+            
             if (attribute == null)
             {
                 Debug.LogWarning($"{type} class attribute is null");
                 return;
             }
-                
+            
             Pool pool = new Pool(monoBehaviour, parent, attribute.Count);
             _poolPairs.Add(type, pool);
         }

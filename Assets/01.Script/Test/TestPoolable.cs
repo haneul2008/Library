@@ -11,5 +11,11 @@ namespace _01.Script.Test
         {
             print("reset test poolable");
         }
+        
+        [ResetItem]
+        public void ResetItem2()
+        {
+            print("reset test poolable 2");
+        }
     }
 }
